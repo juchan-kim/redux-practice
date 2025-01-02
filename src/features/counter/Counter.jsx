@@ -25,7 +25,7 @@ const Counter = () => {
       <input type="text" value={input} onChange={(e) => setInput(e.target.value)}/>
       <div>
         <button onClick={() => dispatch(addAmount(addValue))}>Add Amount</button>
-        <button onClick={() => resetAll()}>Reset</button>
+        <button onClick={resetAll}>Reset</button>
       </div>
     </section>
   )
